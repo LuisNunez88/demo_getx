@@ -1,16 +1,41 @@
 # penka_app
 
-A new Flutter project.
+Demo application built with Flutter and Getx
+
+## Usage
+
+Clone the repository
+
+`https://github.com/LuisNunez88/demo_getx.git`
+
+## Prerequisite
+
+- Flutter 3.16.9
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Setup
 
-A few resources to get you started if this is your first Flutter project:
+###### 1. Create env file
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Create `.env` file in the root directory according and add the required environment variables into them. The example environment variable is in `.env.sample`.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  - Set APIkey and server url
+
+###### 2. Download dependency
+
+```bash
+$ flutter pub get
+```
+
+###### 3. Run code generator
+
+```bash
+$ flutter pub run build_runner build --delete-conflicting-outputs
+```
+
+###### 4. Run
+
+- Run the application if you run it on the web, make sure to use the tag:
+
+`$ --web-browser-flag "--disable-web-security"`
